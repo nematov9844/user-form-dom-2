@@ -64,6 +64,9 @@ function render() {
       data = data.filter((item) => item.id != dataId);
       addLocal();
       render();
+      form.onsubmit = null;
+      inputs[0].value = "";
+      inputs[1].value = "";
     });
   });
 }
